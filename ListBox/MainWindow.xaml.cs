@@ -62,16 +62,21 @@ namespace ListBox
 
         private void LstColores_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            txtColorA_Copy2.Text = Colores[lstColores.SelectedIndex].Nombre;
-            txtColorA_Copy3.Text = Colores[lstColores.SelectedIndex].Hexadecimal;
-            txtColorA_Copy4.Text= Colores[lstColores.SelectedIndex].RGB;
+            if (lstColores.SelectedIndex != -1)
+            {
+                txtColorA_Copy2.Text = Colores[lstColores.SelectedIndex].Nombre;
+                txtColorA_Copy3.Text = Colores[lstColores.SelectedIndex].Hexadecimal;
+                txtColorA_Copy4.Text = Colores[lstColores.SelectedIndex].RGB;
+            }
         }
 
         private void BtnActualizar_Click(object sender, RoutedEventArgs e)
         {
             if(lstColores.SelectedIndex !=-1)
             {
-              
+                Colores[lstColores.SelectedIndex].Nombre = txtColorA_Copy2.Text;
+                Colores[lstColores.SelectedIndex].Hexadecimal = txtColorA_Copy3.Text;
+                Colores[lstColores.SelectedIndex].RGB = txtColorA_Copy4.Text;
             }
         }
     }
