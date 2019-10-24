@@ -14,6 +14,11 @@
         </ListBox>
         <TextBox x:Name="txtColorA" HorizontalAlignment="Left" Height="23" Margin="228,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button Content="Nuevo Color" HorizontalAlignment="Left" Margin="379,30,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click" Height="28"/>
+        <TextBlock HorizontalAlignment="Left" Margin="228,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Nombre"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="txtColorA_Copy" HorizontalAlignment="Left" Height="23" Margin="228,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="228,77,0,0" TextWrapping="Wrap" Text="Hexadecimal" VerticalAlignment="Top" Height="18" Width="77"/>
+        <TextBox x:Name="txtColorA_Copy1" HorizontalAlignment="Left" Height="23" Margin="228,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="228,139,0,0" TextWrapping="Wrap" Text="RGB" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

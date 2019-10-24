@@ -21,14 +21,19 @@ namespace ListBox
     /// </summary>
     public partial class MainWindow : Window
     {
-        ObservableCollection<string> Colores = new ObservableCollection<string>();
+       // ObservableCollection<string> Colores = new ObservableCollection<string>();
+        ObservableCollection<Color> Colores = new ObservableCollection<Color>();
         public MainWindow()
         {
-            InitializeComponent();
-            Colores.Add("Rojo");
-            Colores.Add("Naranja");
-            Colores.Add("Amarillo");
-            Colores.Add("Verde");
+           InitializeComponent();
+            /* Colores.Add("Rojo");
+             Colores.Add("Naranja");
+             Colores.Add("Amarillo");
+             Colores.Add("Verde");*/
+
+            Colores.Add(new Color("Rojo", "#FF0000", "(255,0,0)"));
+            Colores.Add(new Color("Verde", "#00FF00", "(0,255,0)"));
+            Colores.Add(new Color("Azul", "#00000FF", "(0,0,255)"));
 
             lstColores.ItemsSource = Colores;
         }
