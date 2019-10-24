@@ -40,9 +40,39 @@ namespace ListBox
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Colores.Add(txtColorA.Text);
+            //Colores.Add(txtColorA.Text);
+            //txtColorA.Text = "";        
+
+            Colores.Add(
+                new Color(txtColorA.Text, txtColorA_Copy.Text, txtColorA_Copy1.Text));
             txtColorA.Text = "";
-           
+            txtColorA_Copy.Text = "";
+            txtColorA_Copy1.Text = "";
+
+
+        }
+
+        private void BtnBorrar_Click(object sender, RoutedEventArgs e)
+        {
+            if(lstColores.SelectedIndex !=-1)
+            {
+                Colores.RemoveAt(lstColores.SelectedIndex);
+            }
+        }
+
+        private void LstColores_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            txtColorA_Copy2.Text = Colores[lstColores.SelectedIndex].Nombre;
+            txtColorA_Copy3.Text = Colores[lstColores.SelectedIndex].Hexadecimal;
+            txtColorA_Copy4.Text= Colores[lstColores.SelectedIndex].RGB;
+        }
+
+        private void BtnActualizar_Click(object sender, RoutedEventArgs e)
+        {
+            if(lstColores.SelectedIndex !=-1)
+            {
+              
+            }
         }
     }
 }

@@ -7,18 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="btnColor">
-        <ListBox x:Name="lstColores" HorizontalAlignment="Left" Height="345" Margin="10,30,0,0" VerticalAlignment="Top" Width="165">
+        <ListBox x:Name="lstColores" HorizontalAlignment="Left" Height="345" Margin="10,30,0,0" VerticalAlignment="Top" Width="165" SelectionChanged="LstColores_SelectionChanged">
             <!-- <ListBoxItem>Opecion 1</ListBoxItem>
             <ListBoxItem>Opecion 2</ListBoxItem>
             <ListBoxItem>Opecion 3</ListBoxItem>-->
         </ListBox>
-        <TextBox x:Name="txtColorA" HorizontalAlignment="Left" Height="23" Margin="228,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Nuevo Color" HorizontalAlignment="Left" Margin="379,30,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click" Height="28"/>
-        <TextBlock HorizontalAlignment="Left" Margin="228,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Nombre"/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name="txtColorA_Copy" HorizontalAlignment="Left" Height="23" Margin="228,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="228,77,0,0" TextWrapping="Wrap" Text="Hexadecimal" VerticalAlignment="Top" Height="18" Width="77"/>
-        <TextBox x:Name="txtColorA_Copy1" HorizontalAlignment="Left" Height="23" Margin="228,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="228,139,0,0" TextWrapping="Wrap" Text="RGB" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtColorA" HorizontalAlignment="Left" Height="23" Margin="386,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Nuevo Color" HorizontalAlignment="Left" Margin="537,48,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click" Height="28"/>
+        <TextBlock HorizontalAlignment="Left" Margin="386,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Nombre"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="txtColorA_Copy" HorizontalAlignment="Left" Height="23" Margin="386,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="386,95,0,0" TextWrapping="Wrap" Text="Hexadecimal" VerticalAlignment="Top" Height="18" Width="77"/>
+        <TextBox x:Name="txtColorA_Copy1" HorizontalAlignment="Left" Height="23" Margin="386,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="386,157,0,0" TextWrapping="Wrap" Text="RGB" VerticalAlignment="Top"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="192,35,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txtColorA_Copy2" HorizontalAlignment="Left" Height="23" Margin="386,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="386,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Nombre"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="txtColorA_Copy3" HorizontalAlignment="Left" Height="23" Margin="386,312,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="386,297,0,0" TextWrapping="Wrap" Text="Hexadecimal" VerticalAlignment="Top" Height="18" Width="77"/>
+        <TextBox x:Name="txtColorA_Copy4" HorizontalAlignment="Left" Height="23" Margin="386,372,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="386,359,0,0" TextWrapping="Wrap" Text="RGB" VerticalAlignment="Top"/>
+        <Button x:Name="btnActualizar" Content="Button" HorizontalAlignment="Left" Margin="542,254,0,0" VerticalAlignment="Top" Width="75" Click="BtnActualizar_Click"/>
 
     </Grid>
 </Window>
