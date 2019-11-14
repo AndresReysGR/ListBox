@@ -82,5 +82,12 @@ namespace ListBox
             lstColores.Items.Refresh();
         }
 
+        private void BtnBorrar_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (lstColores.SelectedIndex != -1)
+            {
+                Colores.RemoveAt(lstColores.SelectedIndex);
+            }
+        }
     }
 }

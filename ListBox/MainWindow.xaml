@@ -19,7 +19,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="386,95,0,0" TextWrapping="Wrap" Text="Hexadecimal" VerticalAlignment="Top" Height="18" Width="77"/>
         <TextBox x:Name="txtColorA_Copy1" HorizontalAlignment="Left" Height="23" Margin="386,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="386,157,0,0" TextWrapping="Wrap" Text="RGB" VerticalAlignment="Top"/>
-        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="192,35,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="192,35,0,0" VerticalAlignment="Top" Width="75" Click="BtnBorrar_Click_1"/>
         <TextBox x:Name="txtColorA_Copy2" HorizontalAlignment="Left" Height="23" Margin="386,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="386,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Nombre"/><LineBreak/><Run/></TextBlock>
         <TextBox x:Name="txtColorA_Copy3" HorizontalAlignment="Left" Height="23" Margin="386,312,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>

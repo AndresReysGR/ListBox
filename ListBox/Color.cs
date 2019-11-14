@@ -22,5 +22,6 @@ namespace ListBox
         public override string ToString()
         {
             return this.Nombre + "(" + this.Hexadecimal + ")";
-        }    }
+        }
+    }
 }
